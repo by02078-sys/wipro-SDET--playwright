@@ -1,0 +1,10 @@
+function checkType(" balu ") {
+  if (typeof  balu === 'number') {
+    console.log("This is a number");
+  } else if (typeof  balu === 'string') {
+    console.log("This is a string");
+  } else {
+    console.log("This is neither a number nor a string");
+  }
+}
+

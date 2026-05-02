@@ -1,0 +1,132 @@
+syllabus:=1.operations
+          2.statements
+          3.LOOPS
+          4.ARRAYS
+          5. type checker 
+
+OPERATIONS :-
+1. Arithmetic operations  =>
+console.log("Addition:", a + b);
+console.log("Subtraction:", a - b);
+console.log("Multiplication:", a * b);
+console.log("Division:", a / b);
+console.log("Remainder:", a % b); // Remainder (Modulo)
+
+2.// Logical operations --> bool
+console.log("a > b:", a > b); // F
+console.log("a < b:", a < b); // T
+console.log("a == b:", a == b); // F === Strict equality (checks value and type)
+console.log("a != b:", a != b); // T
+console.log("a >= b:", a >= b); // F
+console.log("a <= b:", a <= b); // T
+    
+  
+3// String operations
+console.log("String:", str);
+console.log("Length of string:", str.length);
+console.log("Uppercase:", str.toUpperCase());
+console.log("Lowercase:", str.toLowerCase());
+console.log("Substring (0-5):", str.substring(0, 5)); // 0 - first character, 5 - up to but not including the 5th character
+
+
+STATEMENTS:>
+1 conditional statements;
+  1. if  (condition) ----- if condition ture then output come othrwise not 
+  2 if-else 
+  ex:- if(i > j) {
+    console.log("i is greater");
+    } else {
+    console.log("j is greater");
+    }
+3.switch 
+  ex:=switch(choice) {
+    case "A":
+        console.log("Choice is A");
+        break;
+    case "B":
+        console.log("Choice is B");
+        break;  
+    default:
+        console.log("Invalid choice");
+    }
+
+LOOPS:=
+   1 .for(initilisation;condition;inc/dec);
+   2. while (condition) {
+    // code block to be executed
+     }
+   3.do {
+    // code block to be executed
+     } while (condition);
+   4. for each :=
+     const fruits = ['apple', 'banana', 'cherry'];
+
+     fruits.forEach((item, index) => {
+     console.log(`${index}: ${item}`);
+    });
+    // 0: apple
+    // 1: banana
+    // 2: cherry
+ARRAYS:=a specialized object used to store an ordered collection of values
+
+ ex:=const fruits = ["Apple", "Banana"];
+  ARRAY METHODS:
+  ---> Add/Remove Elements:
+   .push(val): Adds to the end.
+   .pop(): Removes from the end.
+   .unshift(val): Adds to the beginning.
+   .shift(): Removes from the beginning.
+   .splice(index, count, ...items): Adds or removes items at a specific position.
+  --> Searching and Iteration:
+   .indexOf(val): Returns the first index of a value, or -1 if not found.
+   .includes(val): Returns true if the array contains the value.
+   .forEach(fn): Executes a function for every element.
+   .map(fn): Creates a new array by transforming every element.
+   .filter(fn): Creates a new array with elements that pass a test.
+ 
+ TYPE CHECKER:=  it defines the which type of datatype it is 
+   ex:= typeof(4)// integer
+
+
+-------------> DAY 2
+ syllubus:
+  1 Template literals.
+  2.functions.
+
+1.TEMPLATE LITERALS:=, a modern way to work with strings in JavaScript,
+ex:=  const name = 'Alice';
+  console.log(`Hello, ${name}!`); // "Hello, Alice!"  
+
+// whatever write inside ${} takes as js expression.
+2.FUNCTIONS:=function is a reusable block of code designed to perform a specific task.
+  1 arrow ():= (=>) 
+   ex : let sum = (x+y)=>x=y;
+   console.log(sum(5,10));
+  
+   2filter():=used to create a new array containing only the elements from an existing array that pass a specific test
+   ex:=const newArray = array.filter(callback(element, index, array), thisArg);
+  
+   3.find()=> to find the user defined element i sexist or not.
+
+   4.random() => it picks the random value from 1-10 
+   ex: Math.random()
+
+   5.floor ()=> it gives the floor interger value 
+    ex: floor(0.5)---//0
+   
+   6 ceil ()=> it gives the ceil of integer value 
+    ex : ceil (0.5)---//1
+   
+   7.push ()=> it adds the element at Last 
+
+   8. pop()=> it removes the last array element 
+
+   9.unshift()=> it add the element at first place 
+
+   10.shift()=> it removes  the element at first place 
+   
+   11. include => it defines the element exist or not //true or false 
+
+   12. index of()=> it specifies the index of particular element .
+
+   13. length ()=> it specifies the length of  array 

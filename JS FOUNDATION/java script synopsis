@@ -130,3 +130,73 @@ ex:=  const name = 'Alice';
    12. index of()=> it specifies the index of particular element .
 
    13. length ()=> it specifies the length of  array 
+
+   LOGIN PAGE (HTML + CSS + JS)- Used to create a simple login UI and handle basic validation.
+
+🔹HTML (Structure)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="msg"></p>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+🔹CSS (Styling)
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+🔹JavaScript (Logic)
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username === "admin" && password === "1234") {
+        document.getElementById("msg").innerText = "Login Successful";
+        document.getElementById("msg").style.color = "green";
+    } else {
+        document.getElementById("msg").innerText = "Invalid Credentials";
+        document.getElementById("msg").style.color = "red";
+    }
+}

@@ -1,0 +1,7 @@
+const people=["balu","ram","venky","chandra"];
+const formatguest=(names)=>
+{
+	return names 
+    .shift().map(name=>₹guest: ${name}₹).join(₹\n₹);
+}
+console.log(formatguest(people));

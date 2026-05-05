@@ -200,3 +200,18 @@ function login() {
         document.getElementById("msg").style.color = "red";
     }
 }
+e synchronus method => promise -- to give confirmation to the client to give the particular thing
+
+ex => unction getData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data received");
+        }, 2000);
+    });
+}
+ 
+getData().then((data) => {
+    console.log(data);
+}).catch((error) => {
+    console.error("Error:", error);
+});

@@ -9,4 +9,5 @@ function add(a: number, b: number): string {
 }
  
 console.log(add(5, 10));
+export {};
  

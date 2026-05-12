@@ -59,5 +59,7 @@ function isArmstrong(num) {
     return sum === num;
 }
 
+
 const checkNum = 153;
 console.log(isArmstrong(checkNum));
+

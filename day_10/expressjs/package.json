@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "this is an express project",
   "license": "ISC",
-  "author": "Aaryan",
+  "author": "balunp",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,6 @@
   },
   "dependencies": {
     "express": "^5.2.1"
-  }
+  },
+  "keywords": []
 }
